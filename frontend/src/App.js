@@ -8,6 +8,11 @@ import RestaurantsList from "./components/restaurants-list";
 import Login from "./components/login";
 
 function App() {
+  const [user, setUser] = React.useState(null)
+
+  async function login(user = null) {
+    setUser(user);
+  }
   return (
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
@@ -37,5 +42,5 @@ function App() {
     </div>
   );
 }
-
+//This is where I am currently on 1:16:03
 export default App;
